@@ -1,6 +1,6 @@
 {
   "name": "ezscroll",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An easy tool that helps you do scroll animation.",
   "main": "dist/ezscroll.js",
   "scripts": {
