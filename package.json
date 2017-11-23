@@ -1,7 +1,7 @@
 {
   "name": "ezscroll",
-  "version": "1.0.2",
-  "description": "An easy tool that helps you do scroll animation.",
+  "version": "1.1.0",
+  "description": "An easy tool that helps you to scroll the browser window with animation.",
   "main": "dist/ezscroll.js",
   "scripts": {
     "build": "./node_modules/.bin/webpack --config ./build/webpack.config.js"
