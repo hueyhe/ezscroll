@@ -20,7 +20,7 @@ module.exports = Object.assign({}, webpackBaseConfig, {
   // This is important because it allows us to avoid bundling all of our
   // dependencies, which allows browsers to cache those libraries between builds.
   externals: {
-    'detect-browser': 'detect',
-    raf: 'requestAnimationFrame',
+    'detect-browser': 'detect-browser',
+    raf: 'raf',
   },
 });
