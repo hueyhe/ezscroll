@@ -24,7 +24,9 @@ import requestAnimationFrame from 'raf';
 
 import { isFireFox } from './utils';
 
-import Easing from './easing';
+import easing from './easing';
+
+export const Easing = easing;
 
 /**
  * Get the scroll x of body when at scroll width.
