@@ -1,0 +1,6 @@
+src/
+build/
+.npmignore
+package-lock.json
+yarn.lock
+.DS_Store
