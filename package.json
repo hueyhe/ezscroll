@@ -1,10 +1,12 @@
 {
   "name": "ezscroll",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "An easy tool that helps you to scroll the browser window with animation.",
   "main": "dist/ezscroll.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --config ./build/webpack.config.js"
+    "build": "npm run build-commonjs && npm run build-umd",
+    "build-commonjs": "./node_modules/.bin/webpack --config ./build/webpack.config.js",
+    "build-umd": "./node_modules/.bin/webpack --config ./build/webpack.umd.config.js"
   },
   "repository": {
     "type": "git",
