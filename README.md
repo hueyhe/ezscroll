@@ -10,7 +10,7 @@
 
 <!-- DESCRIPTION/ -->
 
-An easy tool that helps you to scroll the browser window with animation. Time to give up `window.scrollTo`!
+A useful tool that helps you to scroll in the browser window with animation. Time to give up `window.scrollTo`!
 
 <!-- /DESCRIPTION -->
 
@@ -30,6 +30,8 @@ $ yarn add ezscroll
 
 ## Basic Usage
 
+### Window scroll
+
 You can simply replace all of your `window.scrollTo` with `ezscroll`.
 
 ```javascript
@@ -40,7 +42,20 @@ import { scrollTo } from 'ezscroll';
 scrollTo(0, 0);
 ```
 
+### Element scroll
+
+You can also scroll inside your element.
+
+```javascript
+import { elScrollTo } from 'ezscroll';
+
+// `element` should be a container element.
+elScrollTo(element, 0, 0);
+```
+
 ## Useful functions
+
+### For window scroll
 
 We provide some useful functions which we think are in common use.
 
@@ -72,7 +87,36 @@ scrollXTo(10);
 scrollYTo(50);
 ```
 
+All functions above support customize duration and easing functions. For more details please refer to [Full API](#full-api).
+
+```javascript
+import { scrollToTop, scrollXTo } from 'ezscroll';
+
+scrollToTop(duration, easing, callback);
+scrollXTo(x, duration, easing, callback);
+```
+
+### For element scroll
+
+Similar as above.
+
+```javascript
+import {
+  elScrollToTop,
+  elScrollToLeft,
+  elScrollToRight,
+  elScrollToBottom,
+  elScrollXTo,
+  elScrollYTo,
+} from 'ezscroll';
+
+elScrollToTop(element, duration, easing, callback);
+elScrollXTo(element, 0, duration, easing, callback);
+```
+
 ## Full API
+
+### Core
 
 ```javascript
 scrollTo(x, y, duration, easing, callback);

@@ -1,7 +1,7 @@
 {
   "name": "ezscroll",
-  "version": "1.1.4",
-  "description": "An easy tool that helps you to scroll the browser window with animation.",
+  "version": "1.2.0",
+  "description": "A useful tool that helps you to scroll in the browser window with animation.",
   "main": "dist/ezscroll.js",
   "scripts": {
     "build": "npm run build-commonjs && npm run build-umd",
