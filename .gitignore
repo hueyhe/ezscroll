@@ -60,3 +60,7 @@ typings/
 # Dist files
 dist/
 
+# Jekyll site
+_site/
+.sass-cache/
+

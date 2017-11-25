@@ -2,3 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
+
+.site-tool {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
