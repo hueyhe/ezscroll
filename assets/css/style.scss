@@ -3,8 +3,50 @@
 
 @import "{{ site.theme }}";
 
+$header-bg-1: #41558a;
+$header-bg-2: #009189;
+$header-bg-3: #a6c0fe;
+$header-bg-4: #f68084;
+$header-bg-5: #d299c2;
+
+.header {
+  text-align: center;
+  background-image: radial-gradient(farthest-corner, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  background-position: 50% 50%;
+  background-color: $header-bg-1;
+  color: #ffffff;
+  padding: 12rem 4rem;
+  animation: gradient 25s infinite;
+}
+
 .site-tool {
   position: fixed;
   right: 50px;
   bottom: 50px;
+}
+
+@keyframes gradient {
+  0% {
+    background-color: $header-bg-1;
+  }
+
+  20% {
+    background-color: $header-bg-2;
+  }
+
+  40% {
+    background-color: $header-bg-3;
+  }
+
+  60% {
+    background-color: $header-bg-4;
+  }
+
+  80% {
+    background-color: $header-bg-5;
+  }
+
+  100% {
+    background-color: $header-bg-1;
+  }
 }
