@@ -18,7 +18,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['babel-preset-env'],
+            presets: ['@babel/preset-env'],
           },
         },
       },
@@ -30,13 +30,7 @@ module.exports = {
     ],
   },
 
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-        drop_console: true,
-      },
-      sourceMap: true,
-    }),
-  ],
+  optimization: {
+    minimize: true,
+  },
 };
