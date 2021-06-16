@@ -5,6 +5,8 @@ const webpackBaseConfig = require('./webpack.base.config');
 const packageInfo = require('../package.json');
 
 module.exports = Object.assign({}, webpackBaseConfig, {
+  mode: 'production',
+
   entry: {
     [packageInfo.name]: './src/index',
   },
